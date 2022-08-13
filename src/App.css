@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS';
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+h3 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ff9e0c;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+  
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 150, 12) 0%,
+    rgb(250, 192, 0) 100%
+  );
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row{
+  background: linear-gradient(
+    90deg,
+    rgb(255, 136, 0) 0%,
+    rgb(250, 133, 0) 100%
+  );
+}
+.delete{
+  align-content: right;
+}
+.todo-done1{
+  background-color: #ffffff; /* Green */
+  border: none;
+  border-radius: 25px;
+  margin: 0px 4px;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-family: Verdana;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+.todo-done1:hover {
+
+  background-color:#1dd40d;
+  color:rgb(255, 255, 255);
+}
+.todo-done2{
+  background-color: #ffffff; /* Green */
+  border: none;
+  border-radius: 25px;
+  margin: 0px 4px;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-family: Verdana;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+.todo-done2:hover {
+
+  background-color:#f30202;
+  color:white;
+}
+.lable-complete{
+  text-decoration: line-through;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-thickness: 3px;
+}
+.lable-incomplete{
+  color: #ffffff;
+}
